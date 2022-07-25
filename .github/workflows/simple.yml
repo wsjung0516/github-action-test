@@ -16,4 +16,4 @@ jobs:
           run |
             import platform
             print(platform.processor())
-          whell: python
+          shell: python
