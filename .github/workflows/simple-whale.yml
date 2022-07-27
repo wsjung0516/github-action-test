@@ -4,9 +4,9 @@ on: [push]
 jobs:
   run-shell-command:
     runs-on: ubuntu-latest
-    # strategy:
-    #   matrix:
-    #     node-version: [14.x]
+    strategy:
+      matrix:
+        node-version: [14.x]
     steps:
       - uses: actions/checkout@v2
       - name: Run the image in a container
