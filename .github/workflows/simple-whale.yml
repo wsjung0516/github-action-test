@@ -18,7 +18,7 @@ jobs:
       - name: Run the image in a container
         uses: addnab/docker-run-action@v3
         with:
-          image: ${{ secrets.DOCKERHUB_USERNAME }}/simplewhale:latest
+          image: ${{ secrets.DOCKER_HUB_USERNAME }}/simplewhale:latest
           run: |
             echo "runing the docker image"
             echo "Testing the nodejs  app endpoints"
