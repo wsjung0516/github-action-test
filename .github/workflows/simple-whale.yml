@@ -5,7 +5,11 @@ on:
 jobs:
   build_test:
     runs_on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14.x]
     steps:
+      - uses: actions/checkout@v2
       - name: Run the image in a container
         uses: addnab/docker-run-action@v3
         with:
