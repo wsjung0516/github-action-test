@@ -1,6 +1,5 @@
-name: simplw-whale
-on:
-  push:
+name: simple-whale
+on: [push]
 
 jobs:
   build_test:
