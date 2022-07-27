@@ -2,8 +2,8 @@ name: simple-whale
 on: [push]
 
 jobs:
-  build_test:
-    runs_on: ubuntu-latest
+  run-shell-command:
+    runs-on: ubuntu-latest
     # strategy:
     #   matrix:
     #     node-version: [14.x]
